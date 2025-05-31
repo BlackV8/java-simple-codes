@@ -12,7 +12,7 @@ public class calculator {
         
         scan.nextLine(); 
         
-        System.out.println("Enter operation (+, -, *, /, %, max, min, sqrt, floor, ceiling, absolute value):");
+        System.out.println("Enter operation (+, -, *, /, %, max, min, sqrt, floor, ceiling, absolute value, power):");
         String oper = scan.nextLine();
 
         switch (oper) {
@@ -56,6 +56,9 @@ public class calculator {
                 break;
             case "absolute":
                 System.out.println(Math.abs(a));
+                break;
+            case "power":
+                System.out.println(Math.pow(a,b));
                 break;
             default:
                 System.out.println("Operation invalid");
